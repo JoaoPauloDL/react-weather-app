@@ -5,6 +5,7 @@ import {
   AccordionItemHeading,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+import './Forecast.css'
 
 
 const WEEK_DAYS = [
@@ -24,7 +25,7 @@ const Forecast = ({ data }) => {
   );
   return (
     <>
-      <label className="title">Diária</label>
+      <label className="title">Próximos dias</label>
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
